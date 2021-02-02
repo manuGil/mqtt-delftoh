@@ -1,4 +1,7 @@
-# vue-mqtt-test
+# VUE-MQTT-DEMO
+
+**[Online demo](https://codesandbox.io/s/funny-water-h2hmj?file=/src/main.js)**
+> it is an https webpage, so it uses a wss connection
 
 ## Project setup
 ```
@@ -7,18 +10,20 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+yarn run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

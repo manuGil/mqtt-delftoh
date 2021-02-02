@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-
+MQTT-Client-Examples-master/
+MQTT-Client-Examples-master.zip
 
 # local env files
 .env.local
