@@ -159,22 +159,24 @@ export default {
 
   data() {
     return {
+      // Unless this part is very useful for the explanation during the workshop, we can hardcode the configuration
       connection: {
-        host: 'broker.emqx.io',
-        port: 8083,
-        endpoint: '/mqtt',
+        host: 'testbed.dcc.tudelft.nl',
+        port: 9010,
+        endpoint: '/', // We don't need this
         clean: true, // 保留会话
         connectTimeout: 4000, // 超时时间
         reconnectPeriod: 4000, // 重连时间间隔
         // 认证信息
-        clientId: 'mqttjs_3be2c321',
-        username: 'emqx_test',
-        password: 'emqx_test',
+        clientId: 'mqttjs-31548', // This must be unique for every browser/tab
+        username: 'ask-for-it', // This should be secured
+        password: 'ask-for-it',
       },
       subscription: {
-        topic: 'topic/mqttx',
+        topic: 'workshop/#', // This will subscribe to the message from every badge
         qos: 0,
       },
+      // We do not need a publisher
       publish: {
         topic: 'topic/browser',
         qos: 0,
